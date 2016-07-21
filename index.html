@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>Jian  Xing  Wu</title>
+	    <link rel="stylesheet" href="css/style.css" charset="utf-8">
+
+	</head>
+	<body>
+		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<div>
+
+			<img  id="background"  src="img/bg.jpg" />
+
+			<div id="chooseCat">
+				<h2>Feed Cat!</h2>
+
+				<p>please choose a cat</p>
+				<p>or all cats!</p>
+				<div id="radioBtns">
+						<input type="radio" name="catName" class="radioButton" value="all" id="All Cats">All Cats<br>
+						<input type="radio" name="catName" class="radioButton" value="Devil" id="Devil">Devil<br>
+						<input type="radio" name="catName" class="radioButton" value="Gandalf" id="Gandalf">Gandalf<br>
+						<input type="radio" name="catName" class="radioButton" value="Legolas" id="Legolas">Legolas<br>
+						<input type="radio" name="catName" class="radioButton" value="Grumpy" id="Grumpy">Grumpy<br>
+						<input type="radio" name="catName" class="radioButton" value="Angel" id="Angel">Angel<br>
+				</div>
+
+				<h2>Specific Breed?</h2>
+						<input id="inputBreed" type="text" name="FirstName" value="" placeholder="emtpy for all breeds"><br>
+						<button id="feedButton" onclick="RadioBtn()"><h2>Feed!</h2></button>
+			</div>
+			<div id="catContainer">
+				<h2>Cat Album</h2>
+
+				<!-- a  cat  picture with two buttons -->
+				<div class="wholeCatContainer" id="Row_1_first" id="cat_1_div">
+					<div class="catPictures">
+						<img  class="cat"  src="img/cat1.jpg" id="cat_1" onmousedown="m_1_Down(this)" onmouseup="m_1_Up(this)"/>
+					</div>
+					<div class="buttonsUnderCat">
+						<button class="catBtn1" id="cat_1_Devil" onclick="eating_1()">Devil</button>
+						<button class="catBtn2" id="cat_1_ragdoll" onclick="eating_1()" >ragdoll</button>
+					</div>
+				</div>
+
+				<div class="wholeCatContainer" id="cat_2_div">
+					<div class="catPictures">
+						<img  class="cat"  src="img/cat2.jpg" id="cat_2"  onmousedown="m_2_Down(this)" onmouseup="m_2_Up(this)"/>
+					</div>
+					<div class="buttonsUnderCat">
+						<button class="catBtn1" id="cat_2_Gandalf"  onclick="eating_2()">Gandalf</button>
+						<button class="catBtn2" id="cat_2_ring"  onclick="eating_2()">ring</button>
+					</div>
+				</div>
+
+				<div class="wholeCatContainer" id="cat_3_div">
+					<div class="catPictures">
+						<img  class="cat"  src="img/cat3.jpg"  id="cat_3" onmousedown="m_3_Down(this)" onmouseup="m_3_Up(this)"/>
+					</div>
+					<div class="buttonsUnderCat">
+						<button class="catBtn1" id="cat_3_Legolas"  onclick="eating_3()">Legolas</button>
+						<button class="catBtn2" id="cat_3_ring"  onclick="eating_3()">ring</button>
+					</div>
+				</div>
+
+				<div class="wholeCatContainer" id="Row_2_first" id="cat_4_div">
+					<div class="catPictures">
+						<img  class="cat"  src="img/cat4.jpg"  id="cat_4"  onmousedown="m_4_Down(this)" onmouseup="m_4_Up(this)"/>
+					</div>
+					<div class="buttonsUnderCat">
+						<button class="catBtn1" id="cat_4_Grumpy"  onclick="eating_4()">Grumpy</button>
+						<button class="catBtn2" id="cat_4_tardar"  onclick="eating_4()">tardar</button>
+					</div>
+				</div>
+
+				<div class="wholeCatContainer" id="cat_5_div">
+					<div class="catPictures">
+						<img  class="cat"  src="img/cat5.jpg"  id="cat_5"  onmousedown="m_5_Down(this)" onmouseup="m_5_Up(this)"/>
+					</div>
+					<div class="buttonsUnderCat">
+						<button class="catBtn1" id="cat_5_Angel"  onclick="eating_5()">Angel</button>
+						<button class="catBtn2" id="cat_5_ragdoll"  onclick="eating_5()">ragdoll</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+
+<!--lack   hove ,click the picture, click the picture under the picture, radiobutton , input type:text and the button-->
+<!--  接下來只要在每個照片下面的button加上name 與 value 再加一些判斷式就可以了  -->
